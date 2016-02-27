@@ -72,5 +72,11 @@ sudo npm install -g npm
 sudo npm install -g onoff
 sudo npm install -g blynk-library
 
+#pywu
+sudo pip-3.2 install pywu
+
+#Pushbullet
+pip install git+https://github.com/Azelphur/pyPushBullet.git
+
 #End script
 sudo raspi-config

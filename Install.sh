@@ -25,7 +25,7 @@ sudo dist-upgrade -y
 
 #Pibrella
 sudo apt-get install -y python-pip
-sudo pip install -y pibrella
+sudo pip install pibrella
 
 #Sense Hat
 sudo apt-get install -y sense-hat

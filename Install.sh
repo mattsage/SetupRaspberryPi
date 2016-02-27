@@ -78,5 +78,8 @@ sudo pip-3.2 install pywu
 #Pushbullet
 pip install git+https://github.com/Azelphur/pyPushBullet.git
 
+#VNC Server
+sudo apt-get install tightvncserver
+
 #End script
 sudo raspi-config

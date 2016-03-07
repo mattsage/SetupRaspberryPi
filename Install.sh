@@ -83,7 +83,8 @@ sudo apt-get install tightvncserver
 
 #how2
 #https://github.com/santinic/how2
-npm install -g how2
+sudo apt-get install nodejs npm
+sudo npm install -g how2
 
 #todo List
 #https://github.com/foobuzz/todo

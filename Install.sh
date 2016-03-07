@@ -81,5 +81,16 @@ pip install git+https://github.com/Azelphur/pyPushBullet.git
 #VNC Server
 sudo apt-get install tightvncserver
 
+#how2
+#https://github.com/santinic/how2
+npm install -g how2
+
+#todo List
+#https://github.com/foobuzz/todo
+
+sudo pip-3.2 install todocli
+
+#Scrapy?
+
 #End script
 sudo raspi-config

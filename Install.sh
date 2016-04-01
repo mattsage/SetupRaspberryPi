@@ -88,10 +88,18 @@ sudo npm install -g how2
 
 #todo List
 #https://github.com/foobuzz/todo
-
 sudo pip-3.2 install todocli
 
 #Scrapy?
+
+#Blink(1)
+#https://github.com/todbot/blink1/wiki/Raspberry-Pi-and-blink(1)
+sudo apt-get install libusb-1.0-0-dev
+git clone https://github.com/todbot/blink1.git
+cd blink1/commandline
+sudo make
+sudo ./blink1-tool --on
+cd
 
 #End script
 sudo raspi-config

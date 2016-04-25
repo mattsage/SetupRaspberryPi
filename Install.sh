@@ -101,5 +101,11 @@ sudo make
 sudo ./blink1-tool --on
 cd
 
+#RetroPie
+
+
+#Pihole
+curl -L https://install.pi-hole.net | bash
+
 #End script
 sudo raspi-config

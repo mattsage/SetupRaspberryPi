@@ -102,7 +102,10 @@ sudo ./blink1-tool --on
 cd
 
 #RetroPie
-
+git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+cd RetroPie-Setup
+sudo ./retropie_setup.sh
+cd
 
 #Pihole
 curl -L https://install.pi-hole.net | bash

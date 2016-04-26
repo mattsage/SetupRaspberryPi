@@ -110,5 +110,7 @@ cd
 #Pihole
 curl -L https://install.pi-hole.net | bash
 
+#Dashing
+
 #End script
 sudo raspi-config

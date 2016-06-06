@@ -1,2 +1,2 @@
 # RaspberryPiSetup
-Configuring Raspberry Pi
+Installing Repos and S/W 

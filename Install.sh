@@ -38,6 +38,9 @@ curl -sS get.pimoroni.com/unicornhat | bash
 #Display-o-Tron
 curl get.pimoroni.com/dot3k | bash
 
+#Blinkt!
+curl -sS get.pimoroni.com/blinkt | bash
+
 #GPIO Zero
 sudo apt-get install -y python3-gpiozero
 

@@ -39,7 +39,12 @@ curl -sS get.pimoroni.com/unicornhat | bash
 curl get.pimoroni.com/dot3k | bash
 
 #Blinkt!
-curl -sS get.pimoroni.com/blinkt | bash
+#curl -sS get.pimoroni.com/blinkt | bash
+git clone https://github.com/pimoroni/blinkt.git
+cd blinkt/library
+sudo python setup.py install
+cd
+mv blinkt Pimoroni/
 
 #GPIO Zero
 sudo apt-get install -y python3-gpiozero

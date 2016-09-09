@@ -120,5 +120,8 @@ curl -L https://install.pi-hole.net | bash
 
 #Dashing
 
+#Virtual Sense-Hat
+sudo apt-get install python-sense-emu python3-sense-emu python-sense-emu-doc sense-emu-tools -y
+
 #End script
 sudo raspi-config

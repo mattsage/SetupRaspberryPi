@@ -123,5 +123,9 @@ curl -L https://install.pi-hole.net | bash
 #Virtual Sense-Hat
 sudo apt-get install python-sense-emu python3-sense-emu python-sense-emu-doc sense-emu-tools -y
 
+#Youtube-Dl - https://github.com/rg3/youtube-dl
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
 #End script
 sudo raspi-config

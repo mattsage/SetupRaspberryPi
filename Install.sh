@@ -21,7 +21,7 @@ passwd
 #Update and Upgrade
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo dist-upgrade -y
+sudo apt-get dist-upgrade -y
 
 #Pibrella
 sudo apt-get install -y python-pip

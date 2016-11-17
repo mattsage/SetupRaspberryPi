@@ -86,8 +86,8 @@ sudo pip-3.2 install pywu
 #Pushbullet
 pip install git+https://github.com/Azelphur/pyPushBullet.git
 
-#VNC Server
-sudo apt-get install tightvncserver
+#VNC Server (NOT NEEDED ANYMORE PART OF CORE BUILD)
+#sudo apt-get install tightvncserver
 
 #how2
 #https://github.com/santinic/how2
@@ -98,7 +98,9 @@ sudo npm install -g how2
 #https://github.com/foobuzz/todo
 sudo pip-3.2 install todocli
 
-#Scrapy?
+#Scrapy
+#https://github.com/scrapy/scrapy
+pip install scrapy
 
 #Blink(1)
 #https://github.com/todbot/blink1/wiki/Raspberry-Pi-and-blink(1)
@@ -126,6 +128,23 @@ sudo apt-get install python-sense-emu python3-sense-emu python-sense-emu-doc sen
 #Youtube-Dl - https://github.com/rg3/youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
+
+#Clone My Github Repos
+mkdir /home/pi/Scripts
+cd scripts
+git clone https://github.com/mattsage/Raspi-Scripts.git
+git clone https://github.com/mattsage/AuroraTracker.git
+git clone https://github.com/mattsage/Arduino-Scripts.git
+git clone https://github.com/mattsage/BirdBox.git
+git clone https://github.com/mattsage/DroneCast.git
+git clone https://github.com/mattsage/Shutdown-Button.git
+git clone https://github.com/mattsage/DFSED.git
+git clone https://github.com/mattsage/Display-O-Info.git
+git clone https://github.com/mattsage/TromsoWebcam.git
+git clone https://github.com/mattsage/ArcadeMachine.git
+git clone https://github.com/mattsage/Projects.git
+git clone https://github.com/mattsage/pywu.git
+cd
 
 #End script
 sudo raspi-config

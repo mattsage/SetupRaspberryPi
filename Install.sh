@@ -130,20 +130,9 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
 #Clone My Github Repos
-mkdir /home/pi/Scripts
-cd scripts
-git clone https://github.com/mattsage/Raspi-Scripts.git
-git clone https://github.com/mattsage/AuroraTracker.git
-git clone https://github.com/mattsage/Arduino-Scripts.git
-git clone https://github.com/mattsage/BirdBox.git
-git clone https://github.com/mattsage/DroneCast.git
-git clone https://github.com/mattsage/Shutdown-Button.git
-git clone https://github.com/mattsage/DFSED.git
-git clone https://github.com/mattsage/Display-O-Info.git
-git clone https://github.com/mattsage/TromsoWebcam.git
-git clone https://github.com/mattsage/ArcadeMachine.git
-git clone https://github.com/mattsage/Projects.git
-git clone https://github.com/mattsage/pywu.git
+mkdir /home/pi/Scripts/github
+cd /home/pi/Scripts/github
+USER=mattsage;PAGE=1; curl "https://api.github.com/users/$USER/repos?page=$PAGE&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
 cd
 
 #End script

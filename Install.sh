@@ -129,6 +129,19 @@ sudo apt-get install python-sense-emu python3-sense-emu python-sense-emu-doc sen
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
+#get-iplayer - https://github.com/get-iplayer/get_iplayer
+sudo bash -c "cat > /etc/apt/sources.list.d/packages.hedgerows.org.uk.list <<EOF
+deb http://packages.hedgerows.org.uk/raspbian wheezy/
+deb-src http://packages.hedgerows.org.uk/raspbian wheezy/
+EOF
+"
+sudo apt-get --allow-unauthenticated -y install jonhedgerows-keyring
+sudo apt-get update
+sudo apt-get install get-iplayer
+wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
+sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb
+get_iplayer --add-prefs --ffmpeg="/usr/bin/ffmpeg"
+
 #Clone My Github Repos
 mkdir /home/pi/Scripts/github
 cd /home/pi/Scripts/github

@@ -114,6 +114,9 @@ sudo make
 sudo ./blink1-tool --on
 cd
 
+#mu
+sudo apt-get install mu -y
+
 #RetroPie
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 cd RetroPie-Setup

@@ -65,6 +65,9 @@ pip install git+https://github.com/Azelphur/pyPushBullet.git
 #Uptimed (Uprecords)
 sudo apt-get install -y uptimed
 
+#X-clip Command line clipboard
+sudo apt-get install xclip
+
 #Codebug
 sudo apt-get install -y python3-codebug-i2c-tether
 

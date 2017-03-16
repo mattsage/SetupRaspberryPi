@@ -128,6 +128,9 @@ curl -L https://install.pi-hole.net | bash
 
 #Dashing
 
+#imagemagick - Create Gifs e.g. convert -delay 10 -loop 0 image*.jpg animation.gif
+sudo apt-get install imagemagick -y
+
 #Virtual Sense-Hat
 sudo apt-get install python-sense-emu python3-sense-emu python-sense-emu-doc sense-emu-tools -y
 

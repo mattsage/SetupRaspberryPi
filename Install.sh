@@ -46,6 +46,12 @@ sudo python setup.py install
 cd
 mv blinkt Pimoroni/
 
+#Explorer pHat - https://github.com/pimoroni/explorer-hat
+curl https://get.pimoroni.com/explorerhat | bash
+
+#Touch pHat - https://github.com/pimoroni/touch-phat
+curl -sS https://get.pimoroni.com/touchphat | bash
+
 #GPIO Zero
 sudo apt-get install -y python3-gpiozero
 

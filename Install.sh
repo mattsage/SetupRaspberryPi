@@ -3,13 +3,10 @@
 #TO DO
 ############################
 #edit wifi connections
-#Copy my scripts across
 #edit rc.local to run IP Script
-#Raspberry Pi Camera
 #VLC
 #Unified remote
 #Static IP
-#YouTube Workshop Scripts
 #Transmission
 
 #Change Password
@@ -23,14 +20,27 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 
-#Pibrella
-sudo apt-get install -y python-pip
-sudo pip install pibrella
+#Clone My Github Repos
+mkdir /home/pi/Scripts/github
+cd /home/pi/Scripts/github
+USER=mattsage;PAGE=1; curl "https://api.github.com/users/$USER/repos?page=$PAGE&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
+cd
+
+##################################
+#Install Hats
+#NOTE: Pimoroni Hats can be installed via Pimoroni dashboard
+sudo apt-get install pimoroni
+#(you will find the Dashboard under 'Accessories' too, in the Pi menu - or just run pimoroni-dashboard at the command line)
+##################################
 
 #Sense Hat
 sudo apt-get install -y sense-hat
 sudo pip-3.2 install -y pillow
 cp /usr/src/sense-hat/examples ~/ -a
+
+#Pibrella
+sudo apt-get install -y python-pip
+sudo pip install pibrella
 
 #Unicorn Hat
 curl -sS get.pimoroni.com/unicornhat | bash
@@ -52,11 +62,37 @@ curl https://get.pimoroni.com/explorerhat | bash
 #Touch pHat - https://github.com/pimoroni/touch-phat
 curl -sS https://get.pimoroni.com/touchphat | bash
 
+#Rainbow Hat
+curl https://get.pimoroni.com/rainbowhat | bash
+
+#MotoZero
+#Nothing to Install
+
+#DOTs Board
+sudo pip install rpi_dots_minecraft
+
+#Blink(1)
+#https://github.com/todbot/blink1/wiki/Raspberry-Pi-and-blink(1)
+sudo apt-get install libusb-1.0-0-dev
+git clone https://github.com/todbot/blink1.git
+cd blink1/commandline
+sudo make
+sudo ./blink1-tool --on
+cd
+
+#Codebug
+sudo apt-get install -y python3-codebug-i2c-tether
+
+##################################
+#Software
+##################################
+
 #GPIO Zero
 sudo apt-get install -y python3-gpiozero
 
 #Arduino
 sudo apt-get install -y arduino
+
 
 #GParted
 sudo apt-get install -y gparted
@@ -74,20 +110,8 @@ sudo apt-get install -y uptimed
 #X-clip Command line clipboard
 sudo apt-get install xclip
 
-#Codebug
-sudo apt-get install -y python3-codebug-i2c-tether
-
-#DOTs Board
-sudo pip install rpi_dots_minecraft
-
 #Fail2Ban
 sudo apt-get install fail2ban
-
-#Blynk
-sudo apt-get install build-essential
-sudo npm install -g npm
-sudo npm install -g onoff
-sudo npm install -g blynk-library
 
 #pywu
 sudo pip-3.2 install pywu
@@ -111,14 +135,11 @@ sudo pip-3.2 install todocli
 #https://github.com/scrapy/scrapy
 pip install scrapy
 
-#Blink(1)
-#https://github.com/todbot/blink1/wiki/Raspberry-Pi-and-blink(1)
-sudo apt-get install libusb-1.0-0-dev
-git clone https://github.com/todbot/blink1.git
-cd blink1/commandline
-sudo make
-sudo ./blink1-tool --on
-cd
+#Blynk USB
+sudo apt-get install build-essential
+sudo npm install -g npm
+sudo npm install -g onoff
+sudo npm install -g blynk-library
 
 #mu
 sudo apt-get install mu -y
@@ -156,12 +177,6 @@ sudo apt-get install get-iplayer
 wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
 sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb
 get_iplayer --add-prefs --ffmpeg="/usr/bin/ffmpeg"
-
-#Clone My Github Repos
-mkdir /home/pi/Scripts/github
-cd /home/pi/Scripts/github
-USER=mattsage;PAGE=1; curl "https://api.github.com/users/$USER/repos?page=$PAGE&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
-cd
 
 #End script
 sudo raspi-config

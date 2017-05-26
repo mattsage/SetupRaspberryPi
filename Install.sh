@@ -110,6 +110,9 @@ sudo apt-get install -y uptimed
 #X-clip Command line clipboard
 sudo apt-get install xclip
 
+#Python Gui
+sudo pip3 install guizero
+
 #Fail2Ban
 sudo apt-get install fail2ban
 

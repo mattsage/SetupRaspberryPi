@@ -65,7 +65,7 @@ curl -sS https://get.pimoroni.com/touchphat | bash
 #Rainbow Hat
 curl https://get.pimoroni.com/rainbowhat | bash
 
-#hyperpixel
+#hyperpixel - https://github.com/pimoroni/hyperpixel
 curl https://get.pimoroni.com/hyperpixel | bash
 
 #MotoZero

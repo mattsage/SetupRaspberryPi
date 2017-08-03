@@ -20,7 +20,11 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 
+#API Keys
+mkdir /home/pi/Scripts/APIConfigs
+
 #Clone My Github Repos
+mkdir /home/pi/Scripts/
 mkdir /home/pi/Scripts/github
 cd /home/pi/Scripts/github
 USER=mattsage;PAGE=1; curl "https://api.github.com/users/$USER/repos?page=$PAGE&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone

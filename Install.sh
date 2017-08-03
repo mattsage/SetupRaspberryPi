@@ -90,7 +90,7 @@ cd
 #Codebug
 sudo apt-get install -y python3-codebug-i2c-tether
 
-#GoPro Python
+#GoPro Python - https://github.com/KonradIT/gopro-py-api
 pip install goprocam
 
 ##################################

@@ -65,6 +65,9 @@ curl -sS https://get.pimoroni.com/touchphat | bash
 #Rainbow Hat
 curl https://get.pimoroni.com/rainbowhat | bash
 
+#hyperpixel
+curl https://get.pimoroni.com/hyperpixel | bash
+
 #MotoZero
 #Nothing to Install
 

@@ -129,9 +129,6 @@ sudo apt-get install fail2ban
 #pywu
 sudo pip-3.2 install pywu
 
-#Pushbullet
-pip install git+https://github.com/Azelphur/pyPushBullet.git
-
 #VNC Server (NOT NEEDED ANYMORE PART OF CORE BUILD)
 #sudo apt-get install tightvncserver
 
@@ -179,17 +176,11 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
 #get-iplayer - https://github.com/get-iplayer/get_iplayer
-sudo bash -c "cat > /etc/apt/sources.list.d/packages.hedgerows.org.uk.list <<EOF
-deb http://packages.hedgerows.org.uk/raspbian wheezy/
-deb-src http://packages.hedgerows.org.uk/raspbian wheezy/
-EOF
-"
-sudo apt-get --allow-unauthenticated -y install jonhedgerows-keyring
-sudo apt-get update
-sudo apt-get install get-iplayer
-wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
-sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb
-get_iplayer --add-prefs --ffmpeg="/usr/bin/ffmpeg"
+wget http://packages.hedgerows.org.uk/scripts/install.sh -O - | sh
+
+#wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
+#sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb
+#get_iplayer --add-prefs --ffmpeg="/usr/bin/ffmpeg"
 
 #End script
 sudo raspi-config

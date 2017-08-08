@@ -30,6 +30,9 @@ cd /home/pi/Scripts/github
 USER=mattsage;PAGE=1; curl "https://api.github.com/users/$USER/repos?page=$PAGE&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
 cd
 
+#SAMBA
+sudo apt-get install samba samba-common-bin
+
 ##################################
 #Install Hats
 #NOTE: Pimoroni Hats can be installed via Pimoroni dashboard

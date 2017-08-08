@@ -33,6 +33,9 @@ cd
 #SAMBA
 sudo apt-get install samba samba-common-bin
 
+#wicd - WIFI GUI
+sudo apt-get install wicd
+
 ##################################
 #Install Hats
 #NOTE: Pimoroni Hats can be installed via Pimoroni dashboard
@@ -81,7 +84,7 @@ curl https://get.pimoroni.com/hyperpixel | bash
 #DOTs Board
 sudo pip install rpi_dots_minecraft
 
-#Blink(1)
+#Blink(1) USB
 #https://github.com/todbot/blink1/wiki/Raspberry-Pi-and-blink(1)
 sudo apt-get install libusb-1.0-0-dev
 git clone https://github.com/todbot/blink1.git
@@ -105,7 +108,6 @@ sudo apt-get install -y python3-gpiozero
 
 #Arduino
 sudo apt-get install -y arduino
-
 
 #GParted
 sudo apt-get install -y gparted

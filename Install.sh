@@ -150,7 +150,7 @@ sudo pip-3.2 install todocli
 #https://github.com/scrapy/scrapy
 pip install scrapy
 
-#Blynk USB
+#Blynk 
 sudo apt-get install build-essential
 sudo npm install -g npm
 sudo npm install -g onoff

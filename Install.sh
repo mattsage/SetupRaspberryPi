@@ -117,7 +117,8 @@ sudo apt-get install -y sleuthkit
 sudo apt-get install -y autopsy
 
 #Pushbullet
-pip install git+https://github.com/Azelphur/pyPushBullet.git
+#pip install git+https://github.com/Azelphur/pyPushBullet.git
+pip install pushbullet.py
 
 #Uptimed (Uprecords)
 sudo apt-get install -y uptimed

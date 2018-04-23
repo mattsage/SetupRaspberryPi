@@ -103,6 +103,11 @@ pip install goprocam
 #Software
 ##################################
 
+#PiShrink
+wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+chmod +x pishrink.sh
+sudo mv pishrink.sh /usr/local/bin
+
 #GPIO Zero
 sudo apt-get install -y python3-gpiozero
 

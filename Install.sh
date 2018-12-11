@@ -187,7 +187,7 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
 #get-iplayer - https://github.com/get-iplayer/get_iplayer
-wget http://packages.hedgerows.org.uk/scripts/install.sh -O - | sh
+wget http://packages.hedgerows.org.uk/raspbian/install.sh -O - | sh
 
 #wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
 #sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb

@@ -128,6 +128,11 @@ pip install pushbullet.py
 #Uptimed (Uprecords)
 sudo apt-get install -y uptimed
 
+#NTFS Support
+sudo apt-get install ntfs-3g
+
+
+
 #X-clip Command line clipboard
 sudo apt-get install xclip
 

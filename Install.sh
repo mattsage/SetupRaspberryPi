@@ -194,6 +194,18 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 #get-iplayer - https://github.com/get-iplayer/get_iplayer
 wget http://packages.hedgerows.org.uk/raspbian/install.sh -O - | sh
 
+#Docker
+##Install Docker
+sudo apt install docker.io -y
+##test container deployment
+sudo docker run -itd -p 80:80 nginx
+##Verify our container is there
+docker ps
+##Create Docker volume for persistent data
+docker volume create portainer_stuff
+#Deploy Portainer
+docker run -d -p 9443:9443 -p 8000:8000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_stuff:/data portainer/portainer-ce:latest
+
 #wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
 #sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb
 #get_iplayer --add-prefs --ffmpeg="/usr/bin/ffmpeg"
